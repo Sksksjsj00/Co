@@ -232,7 +232,7 @@ if not is_user_in_both_channels(user_id):
         
     import datetime
 
-def handle_user(user_id, user_data):
+def handle_user(user_id, user_data, bot, message):
     if user_id not in user_data:
         user_data[user_id] = {
             'attacks': 0,
@@ -240,13 +240,11 @@ def handle_user(user_id, user_data):
             'last_attack': None
         }
 
-    # Channel check (example)
     if not is_user_in_both_channels(user_id):
         bot.reply_to(message, "❌ Dono channel join karo pehle!\n🔗 Main Channel – https://t.me/+ZOwep4Yba59hYmI1\n🔗 Feedback Channel – https://t.me/+684T5CsBQcBmMWM9")
         return
 
-    # Aapka actual code yahan likho
-    bot.reply_to(message, "✅ Aap dono channel me ho!")
+    bot.reply_to(message, "✅ Aap dono channels me ho!")
 
 
 
