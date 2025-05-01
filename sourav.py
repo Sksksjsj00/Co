@@ -226,9 +226,8 @@ def check_cooldown(message):
         return
     
 if not is_user_in_both_channels(user_id):
-    bot.reply_to(message, "❌ Dono channel join karo pehle!\n🔗 Main Channel – https://t.me/+ZOwep4Yba59hYmI1\n🔗 Feedback Channel – https://t.me/+684T5CsBQcBmMWM9")
-   
-    return
+        bot.reply_to(message, "❌ Dono channel join karo pehle!\n🔗 Main Channel – https://t.me/+ZOwep4Yba59hYmI1\n🔗 Feedback Channel – https://t.me/+684T5CsBQcBmMWM9")
+        return  # Ab return statement function ke andar hai, yeh error nahi dega
 
         
     user_data.setdefault(user_id, {
