@@ -227,6 +227,7 @@ def check_cooldown(message):
     
 if not is_user_in_both_channels(user_id):
     bot.reply_to(message, "❌ Dono channel join karo pehle!\n🔗 Main Channel – https://t.me/+ZOwep4Yba59hYmI1\n🔗 Feedback Channel – https://t.me/+684T5CsBQcBmMWM9")
+   
     return
 
         
