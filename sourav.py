@@ -237,6 +237,8 @@ if not is_user_in_both_channels(user_id):
         'last_attack': None
     })
 
+
+
     
     last_attack = user_data[user_id]['last_attack']
     if COOLDOWN_TIME == 0:
