@@ -230,11 +230,13 @@ if not is_user_in_both_channels(user_id):
         return  # Ab return statement function ke andar hai, yeh error nahi dega
 
         
+    def some_function():
     user_data.setdefault(user_id, {
         'attacks': 0,
         'last_reset': datetime.datetime.now(),
         'last_attack': None
     })
+
     
     last_attack = user_data[user_id]['last_attack']
     if COOLDOWN_TIME == 0:
